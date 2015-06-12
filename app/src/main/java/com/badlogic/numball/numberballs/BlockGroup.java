@@ -6,11 +6,12 @@ import java.util.Random;
 
 /**
  * Created by t-chshar on 5/28/2015.
+ * This object is a group of blocks
  */
 public class BlockGroup {
 
-    public List<Block> parts = new ArrayList<Block>();
-    public int size;
+    public List<Block> parts = new ArrayList<Block>();  // A group of blocks
+    public int size;                                //size of the block
     Random rand =  new Random();
     public int state;
 
@@ -25,36 +26,42 @@ public class BlockGroup {
         }
     }
 
-    public void advance() {
+    // advance the block by one step
+    public void advance()
+        {
 
 
 
             int len = parts.size() - 1;
-            for (int i = len; i > 0; i--) {
+            for (int i = len; i > 0; i--)
+            {
 
-                if (parts.get(0).y < 8) {
+                if (parts.get(0).y < 8)
+                {
                     Block before = parts.get(i - 1);
                     Block part = parts.get(i);
                     part.x = before.x;
                     part.y = before.y;
                 }
             }
-            if (parts.get(0).y < 8) {
+
+            if (parts.get(0).y < 8)
+                {
 
                 parts.get(0).y += 1;
 
-            }
+                }
 
 
 
 
-        }
+      }
 
 
 
 
 
-    }
+}
 
 
 

@@ -1,12 +1,16 @@
 package com.badlogic.numball.numberballs;
 
 import java.util.Random;
+/**
+ * Created by t-chshar on 5/28/2015.
+ * This file denotes the object World of the Blocks
+ */
 
 
 public class BlockWorld {
 
 
-    static final float TICK_INITIAL = 0.1f;
+    static final float TICK_INITIAL = 0.1f;  // Denotes the time interval between two frames
     public Ball redball;
     public Ball blueball;
     public BlockGroup group;
@@ -31,6 +35,7 @@ public class BlockWorld {
 
     }
 
+    //updates the screen after a delta time.
     public void update(float deltaTime) {
 
 
