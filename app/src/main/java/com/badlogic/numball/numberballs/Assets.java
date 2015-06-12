@@ -42,11 +42,7 @@ public class Assets {
 
     
     public static Sound click;
-   // public static Sound eat;
-   //  public static Sound bitten;
-  //   public static Sound jungle;
      public static Sound shot;
-   //  public static Sound glassping;
      public static Sound blockhit;
     public static Sound[] numberSoundArray = new Sound[10];
 

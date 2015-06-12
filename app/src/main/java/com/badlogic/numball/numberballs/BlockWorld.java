@@ -2,9 +2,7 @@ package com.badlogic.numball.numberballs;
 
 import java.util.Random;
 
-/**
- * Created by t-chshar on 5/28/2015.
- */
+
 public class BlockWorld {
 
 
@@ -26,7 +24,7 @@ public class BlockWorld {
 
 
 
-       group = new BlockGroup(1, 0);//make it random
+       group = new BlockGroup(1, 0);
         groupMove = true;
 
 
@@ -34,39 +32,18 @@ public class BlockWorld {
     }
 
     public void update(float deltaTime) {
-       // if (gameOver)
-        //    return;
+
 
         tickTime += deltaTime;
 
         while (tickTime > tick) {
             tickTime -= tick;
 
-            if(groupMove == true) {
+            if(groupMove) {
                 group.advance();
             }
             redball.fire();
             blueball.fire();
-
-      //      if(group.state == group.size) {
-
-              //  try {
-                   // group.advance(false);
-                   // Thread.sleep(1000);
-                  //  group.advance(true);//1000 milliseconds is one second.
-              //  }// catch(InterruptedException ex) {
-                    //Thread.currentThread().interrupt();
-                //}
-
-
-
-
-             //   group = new BlockGroup(rand.nextInt(8)+2, 0);
-
-
-                //group.advance();
-                
-          //  }
 
 
 

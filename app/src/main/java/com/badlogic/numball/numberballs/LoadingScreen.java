@@ -49,11 +49,7 @@ public class LoadingScreen extends Screen {
 
 
         Assets.click = game.getAudio().newSound("click.ogg");
-       // Assets.eat = game.getAudio().newSound("eat.ogg");
-      //  Assets.bitten = game.getAudio().newSound("bitten.ogg");
-      //  Assets.jungle = game.getAudio().newSound("jungle.ogg");
         Assets.shot = game.getAudio().newSound("shot.wav");
-      //  Assets.glassping = game.getAudio().newSound("glassping.wav");
         Assets.blockhit = game.getAudio().newSound("blockhit.wav");
         Assets.numberSoundArray[0] = game.getAudio().newSound("one.mp3");
         Assets.numberSoundArray[1] = game.getAudio().newSound("two.mp3");
